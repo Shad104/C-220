@@ -1,0 +1,36 @@
+﻿@model HomeWork6.Models.BirthdayCardContent
+
+@{
+    Layout = null;
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles.css" />
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+
+<h1>Birthday Card Sent</h1>
+<div class="form-group">
+    <label for="From">From: @Model.From</label>
+</div>
+<div class="form-group">
+    <label for="To">To: @Model.To</label>
+</div>
+<div class="form-group">
+    <label for="Message">Message: @Model.Message</label>
+</div>
+
+
